@@ -4,7 +4,7 @@ ircbot
 simple IRC bot in Python
 ------------------------
 * https://github.com/cgoldberg/ircbot
-* Corey Goldberg <cgoldberg@gmail.com>, 2013
+* Corey Goldberg, <cgoldberg@gmail.com>, 2013
 
 ----
 
