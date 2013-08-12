@@ -40,7 +40,7 @@ class TestBot(irc.bot.SingleServerIRCBot):
     def __init__(self, server, port, channel, nickname, realname):
         irc.bot.SingleServerIRCBot.__init__(
             self,
-            [(server, port),],
+            [(server, port)],
             nickname,
             realname)
         self.channel = channel
