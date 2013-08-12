@@ -1,9 +1,9 @@
-ircbot
-======
+py-ircbot
+=========
 
 simple IRC bot in Python
 ------------------------
-* https://github.com/cgoldberg/ircbot
+* https://github.com/cgoldberg/py-ircbot
 * Corey Goldberg, <cgoldberg@gmail.com>, 2013
 
 license:
