@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-#  ircbot - simple IRC bot in Python
+#  py-ircbot - simple IRC bot in Python
 #  -----------------------------------
 #  * https://github.com/cgoldberg/py-ircbot
 #  * Corey Goldberg <cgoldberg@gmail.com>, 2013
