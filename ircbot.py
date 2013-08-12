@@ -1,8 +1,8 @@
-#! /usr/bin/env python
+#!/usr/bin/env python
 #
 #  ircbot - simple IRC bot in Python
 #  -----------------------------------
-#  * https://github.com/cgoldberg/ircbot
+#  * https://github.com/cgoldberg/py-ircbot
 #  * Corey Goldberg <cgoldberg@gmail.com>, 2013
 #
 #  license:
@@ -37,10 +37,12 @@ import irc.strings
 
 
 class TestBot(irc.bot.SingleServerIRCBot):
-    def __init__(self, server, port, channel, nickname):
+    def __init__(self, server, port, channel, nickname, realname):
         irc.bot.SingleServerIRCBot.__init__(
-            self, [(server, port)], nickname, nickname
-        )
+            self,
+            [(server, port),],
+            nickname,
+            realname)
         self.channel = channel
 
     def on_nicknameinuse(self, c, e):
@@ -102,7 +104,13 @@ if __name__ == '__main__':
     else:
         channel = '#' + args.channel
 
-    bot = TestBot(args.server, args.port, channel, args.nickname)
+    bot = TestBot(
+        args.server,
+        args.port,
+        channel,
+        args.nickname,
+        args.nickname
+    )
     try:
         bot.start()
     except KeyboardInterrupt:
